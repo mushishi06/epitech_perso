@@ -1,0 +1,765 @@
+; -------------
+; exemple.all -
+; -------------
+
+push	int8(3)
+push	int8(5)
+add
+dump	;
+
+push	int16(3)
+push	int16(5)
+add
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+add
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+add
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+add
+dump	;
+
+
+push	int8(3)
+push	int8(5)
+sub
+dump	;
+
+push	int16(3)
+push	int16(5)
+sub
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+sub
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+sub
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+sub
+dump	;
+
+push 	int8(3)
+push	int8(5)
+mul
+dump	;
+
+push	int16(3)
+push	int16(5)
+mul
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+mul
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+mul
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+mul
+dump	;
+
+push	int8(3)
+push	int8(5)
+div
+dump	;
+
+push	int16(3)
+push	int16(5)
+div
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+div
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+div
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+div
+dump	;
+
+push	int8(3)
+push	int8(5)
+mod
+dump	;
+
+push	int16(3)
+push	int16(5)
+mod
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+mod
+dump	;
+
+; error modulo with a floating expression
+;push	float(3.1)
+;push	float(5.9)
+;mod
+;dump	;
+
+;push	double(3.9)
+;push	double(5.1)
+;mod
+;dump	;
+
+;------------
+
+push	int8(3)
+push	int16(5)
+add
+dump	;
+
+push	int8(3)
+push	int32(5)
+add
+dump	;
+
+push	int8(3)
+push	float(5.1)
+add
+dump	;
+
+push	int8(3)
+push	double(3.1)
+add
+dump	;
+
+push	int16(3)
+push	int8(5)
+add
+dump	;
+
+push	int16(3)
+push	int32(5)
+add
+dump	;
+
+push	int16(3)
+push	float(5.1)
+add
+dump	;
+
+push	int16(3)
+push	double(3.1)
+add
+dump	;
+
+push	int32(3)
+push	int16(5)
+add
+dump	;
+
+push	int32(3)
+push	int8(5)
+add
+dump	;
+
+push	int32(3)
+push	float(5.1)
+add
+dump	;
+
+push	int32(3)
+push	double(3.1)
+add
+dump	;
+
+push	double(3.1)
+push	int16(5)
+add
+dump	;
+
+push	double(3.1)
+push	int32(5)
+add
+dump	;
+
+push	double(3.1)
+push	float(5.1)
+add
+dump	;
+
+push	double(3.1)
+push	int8(3)
+add
+dump	;
+
+push	float(5.1)
+push	int16(5)
+add
+dump	;
+
+push	float(5.1)
+push	int32(5)
+add
+dump	;
+
+push	float(5.1)
+push	double(3.1)
+add
+dump	;
+
+push	float(5.1)
+push	int8(3)
+add
+dump	;
+
+;----------
+
+push	int8(3)
+push	int16(5)
+sub
+dump	;
+
+push	int8(3)
+push	int32(5)
+sub
+dump	;
+
+push	int8(3)
+push	float(5.1)
+sub
+dump	;
+
+push	int8(3)
+push	double(3.1)
+sub
+dump	;
+
+push	int16(3)
+push	int8(5)
+sub
+dump	;
+
+push	int16(3)
+push	int32(5)
+sub
+dump	;
+
+push	int16(3)
+push	float(5.1)
+sub
+dump	;
+
+push	int16(3)
+push	double(3.1)
+sub
+dump	;
+
+push	int32(3)
+push	int16(5)
+sub
+dump	;
+
+push	int32(3)
+push	int8(5)
+sub
+dump	;
+
+push	int32(3)
+push	float(5.1)
+sub
+dump	;
+
+push	int32(3)
+push	double(3.1)
+sub
+dump	;
+
+push	double(3.1)
+push	int16(5)
+sub
+dump	;
+
+push	double(3.1)
+push	int32(5)
+sub
+dump	;
+
+push	double(3.1)
+push	float(5.1)
+sub
+dump	;
+
+push	double(3.1)
+push	int8(3)
+sub
+dump	;
+
+push	float(5.1)
+push	int16(5)
+sub
+dump	;
+
+push	float(5.1)
+push	int32(5)
+sub
+dump	;
+
+push	float(5.1)
+push	double(3.1)
+sub
+dump	;
+
+push	float(5.1)
+push	int8(3)
+sub
+dump	;
+
+;------
+
+push	int8(3)
+push	int16(5)
+mul
+dump	;
+
+push	int8(3)
+push	int32(5)
+mul
+dump	;
+
+push	int8(3)
+push	float(5.1)
+mul
+dump	;
+
+push	int8(3)
+push	double(3.1)
+mul
+dump	;
+
+push	int16(3)
+push	int8(5)
+mul
+dump	;
+
+push	int16(3)
+push	int32(5)
+mul
+dump	;
+
+push	int16(3)
+push	float(5.1)
+mul
+dump	;
+
+push	int16(3)
+push	double(3.1)
+mul
+dump	;
+
+push	int32(3)
+push	int16(5)
+mul
+dump	;
+
+push	int32(3)
+push	int8(5)
+mul
+dump	;
+
+push	int32(3)
+push	float(5.1)
+mul
+dump	;
+
+push	int32(3)
+push	double(3.1)
+mul
+dump	;
+
+push	double(3.1)
+push	int16(5)
+mul
+dump	;
+
+push	double(3.1)
+push	int32(5)
+mul
+dump	;
+
+push	double(3.1)
+push	float(5.1)
+mul
+dump	;
+
+push	double(3.1)
+push	int8(3)
+mul
+dump	;
+
+push	float(5.1)
+push	int16(5)
+mul
+dump	;
+
+push	float(5.1)
+push	int32(5)
+mul
+dump	;
+
+push	float(5.1)
+push	double(3.1)
+mul
+dump	;
+
+push	float(5.1)
+push	int8(3)
+mul
+dump	;
+
+;-------------
+
+push	int8(3)
+push	int16(5)
+div
+dump	;
+
+push	int8(3)
+push	int32(5)
+div
+dump	;
+
+push	int8(3)
+push	float(5.1)
+div
+dump	;
+
+push	int8(3)
+push	double(3.1)
+div
+dump	;
+
+push	int16(3)
+push	int8(5)
+div
+dump	;
+
+push	int16(3)
+push	int32(5)
+div
+dump	;
+
+push	int16(3)
+push	float(5.1)
+div
+dump	;
+
+push	int16(3)
+push	double(3.1)
+div
+dump	;
+
+push	int32(3)
+push	int16(5)
+div
+dump	;
+
+push	int32(3)
+push	int8(5)
+div
+dump	;
+
+push	int32(3)
+push	float(5.1)
+div
+dump	;
+
+push	int32(3)
+push	double(3.1)
+div
+dump	;
+
+push	double(3.1)
+push	int16(5)
+div
+dump	;
+
+push	double(3.1)
+push	int32(5)
+div
+dump	;
+
+push	double(3.1)
+push	float(5.9)
+div
+dump	;
+
+push	double(3.5)
+push	int8(3)
+div
+dump	;
+
+push	float(5.7)
+push	int16(5)
+div
+dump	;
+
+push	float(5.6)
+push	int32(5)
+div
+dump	;
+
+push	float(5.5)
+push	double(3.1)
+div
+dump	;
+
+push	float(5.1)
+push	int8(3)
+div
+dump	;
+;-----------
+
+
+push	int8(3)
+push	int16(5)
+mod
+dump	;
+
+push	int8(3)
+push	int32(5)
+mod
+dump	;
+
+;push	int8(3)
+;push	float(5.8)
+;mod
+;dump	;
+
+;push	int8(3)
+;push	double(3.5)
+;mod
+;dump	;
+
+push	int16(3)
+push	int8(5)
+mod
+dump	;
+
+push	int16(3)
+push	int32(5)
+mod
+dump	;
+
+;push	int16(3)
+;push	float(5.8)
+;mod
+;dump	;
+
+;push	int16(3)
+;push	double(9.9)
+;mod
+;dump	;
+
+push	int32(3)
+push	int16(5)
+mod
+dump	;
+
+push	int32(3)
+push	int8(5)
+mod
+dump	;
+
+;push	int32(3)
+;push	float(5.2)
+;mod
+;dump	;
+
+;push	int32(3)
+;push	double(3.3)
+;mod
+;dump	;
+
+;push	double(3.4)
+;push	int16(5)
+;mod
+;dump	;
+
+;push	double(3.5)
+;push	int32(5)
+;mod
+;dump	;
+
+;push	double(3.1)
+;push	float(5.8)
+;mod
+;dump	;
+
+;push	double(3.1)
+;push	int8(3)
+;mod
+;dump	;
+
+;push	float(9.1)
+;push	int16(5)
+;mod
+;dump	;
+
+;push	float(9.1)
+;push	int32(5)
+;mod
+;dump	;
+
+;push	float(9.1)
+;push	double(3.8)
+;mod
+;dump	;
+
+;push	float(5.9)
+;push	int8(3)
+;mod
+;dump	;
+; -------------
+
+
+push	int16(-3)
+push	int8(-5)
+add
+dump	;
+
+push	int16(-3)
+push	int32(-5)
+add
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+add
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+add
+dump	;
+
+
+push	int8(3)
+push	int8(5)
+sub
+dump	;
+
+push	int16(3)
+push	int16(5)
+sub
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+sub
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+sub
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+sub
+dump	;
+
+push 	int8(3)
+push	int8(5)
+mul
+dump	;
+
+push	int16(3)
+push	int16(5)
+mul
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+mul
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+mul
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+mul
+dump	;
+
+push	int8(3)
+push	int8(5)
+div
+dump	;
+
+push	int16(3)
+push	int16(5)
+div
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+div
+dump	;
+
+push	float(3.1)
+push	float(5.1)
+div
+dump	;
+
+push	double(3.1)
+push	double(5.1)
+div
+dump	;
+
+push	int8(3)
+push	int8(5)
+mod
+dump	;
+
+push	int16(3)
+push	int16(5)
+mod
+dump	;
+
+push	int32(-3)
+push	int32(-5)
+mod
+dump	;
+
+;push	float(3.1)
+;push	float(5.1)
+;mod
+;dump	;
+
+;push	double(3.1)
+;push	double(5.1)
+;mod
+;dump	;
+
+exit

@@ -1,0 +1,89 @@
+Nom :		Trade
+Version :  09.02.2012
+ 
+Description
+-----------
+Le but de ce projet est de jouer avec le cours de la bourse, c'est-à-dire acheter et vendre des actions suivant le cours de la bourse. Bien évidemment, comme dans la vrai vie, vous ne savez pas à l'avance le cours que l'action va avoir, c'est un système «interactif».
+
+Les grandes lignes
+------------------
+Votre programme sera dépendant d'une moulinette dans la mesure où c'est cette dernière qui  transmettra les cours de la bourse et vérifiera les différentes actions possibles.  Votre programme devra donc analyser les chiffres reçus et déterminer les actions à effectuer, à savoir VENDRE, 
+ACHETER ou NE RIEN FAIRE (le but du projet étant bien sûr d'avoir le plus d'argent possible).
+
+Lors d'un ACHAT ou d'une VENTE, une commission de 0.15% arrondi à l'entier supérieur est prélevée. Cette comission s'applique sur le montant total de votre ordre.Exemple:Achat de 3 actions a 1200. La commission sera de (3*1200)*0.15/100=5.4 qui en arrondissant vaut 6. Au final votre achat a 3600 vous coute en réalité 3606.
+
+Détails techniques
+------------------		
+La moulinette :
+
+./moulinette –f fichier_bourse –p programme_trade -m capital_départ [–o]
+
+Les options –f et –p et -m sont obligatoires.
+
+–f	fichier_bourse où fichier_bourse représente le fichier contenant les nombres correspondants aux cours de la bourse.
+–p	programme_trade où programme_trade est le path du programme que vous aurez écrit.
+-m      précise le capital de départ c'est à dire l'argent initial dont vous disposez.
+–o 	permet d'afficher les nombres (cours de la bourse) sur la sortie standard.
+
+Votre programme
+---------------
+Il recevra sur l'entrée standard :
+
+Le montant d'argent initial
+Le nombre de jours
+Les nombres (cours de la bourse)
+La chaîne «--end--»
+
+Exemple :
+10000		argent initial
+3               nombre de jours
+600		(
+700		cours de la bourse
+500		)
+--end--		string
+
+Votre objectif est clairement de terminer avec le plus d'argent possible. Le cours que vous lisez est le cours auquel vous achèterez (même principe pour la vente).
+
+Syntaxe des actions
+-------------------
+
+«passe\n» : 		vous ne faites rien, le nombre suivant vous sera transmis.
+
+«buy nb_action\n» : 	vous achetez nb_action au cours actuel, vous devez avoir suffisamment d'argent; si ce n'est pas le cas, la moulinette s'arrête.
+
+«sell nb_action\n» :	vous vendez nb_action au cours actuel, vous devez posséder suffisamment d'actions; si ce n'est pas le cas, la moulinette s'arrête.
+
+PS : nb_action est un entier positif.
+
+Toute autre commande entrainera une erreur de syntaxe et la moulinette s'arrêtera.
+
+Votre programme pourra être écrit dans n'importe quel langage mais devra fonctionner avec la moulinette qui est en langage PHP.
+
+Fichiers de cours de bourse
+---------------------------
+Des fichiers exemples de cours de bourse réels vous sont fournis avec le sujet de ce projet. D'autres fichiers, exactement du même type que ceux dont vous disposez seront utilisés en soutenance.
+
+Les fichiers exemples sont associés aux nombre de jours et capitaux de départ suivants :
+
+fichier         nombre de jours    capital de départ
+AMAZON1.TXT              254         		        2 000 000
+BAC1.TXT        	 254            	          200 000
+CISCO1.TXT 		 254            	          300 000
+boeing5.txt     	1524     			1 000 000
+ibm5.txt        	1524     			2 000 000
+nike5.txt       	1524     			1 000 000
+
+
+Conseils
+--------
+Ce sujet n'est pas aussi simple qu'il n'y parait. Ne vous lancez pas dans le code sans avoir bien analysé la problématique.
+
+En aucun  cas le code  ne sera regardé hormis  pour s'assurer que vous l'avez bien réalisé vous même (il ne rentrera pas en compte dans l'évaluation). Il  vous sera demandé  d'être capable d'expliquer sur quel principe logique repose votre programme (un dossier rapporte des points de bonus).
+
+Pour toute question
+-------------------
+
+Newsgroup :	epitech.projs.ept2.trade
+Mail :		neveu_d@epitech.net
+
+Bon travail à tous.

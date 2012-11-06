@@ -1,0 +1,3 @@
+push	int8(5)
+dump
+exit

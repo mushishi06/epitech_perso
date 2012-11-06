@@ -1,0 +1,5 @@
+09/01/2012 ~10:00:00 : Patch de la sortie d'exemple de l'exercice 1 pour refleter exactement ce qui est demande par le sujet.
+09/01/2012 11:25:00  : Patch de typos : Pas d'espace apres le ! de "1337 !", rajout de sickkoalalist.cpp dans les fichiers a fournir de l'ex 05, retrait d'une apostrophe en trop a la place d'une sortie dans l'ex 02
+09/01/2012 11:35:00  : Le mot-cle using est bien interdit a l'ex 00
+09/01/2012 17:30:00  : Patch des methodes getfromXX, remove, removefromXX de toutes les XXXList de l'ex 05
+09/01/2012 19:00:45  : Un getByID sur un KoalaNurse prend bien un int et non une string.
