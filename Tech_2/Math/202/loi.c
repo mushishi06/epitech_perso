@@ -5,7 +5,7 @@
 ** Login   <belia-_r@epitech.net>
 **
 ** Started on  Sun Mar 10 18:19:15 2013 romain belia-bourgeois
-** Last update Wed Mar 13 19:15:23 2013 romain belia-bourgeois
+** Last update Sun Mar 17 14:10:21 2013 romain belia-bourgeois
 */
 
 #include	<stdio.h>
@@ -114,7 +114,7 @@ void	proba_z(double **tab, double **zab)
       while (i < 6)
 	{
 	  k = 1;
-	  while (k < 11)
+	  while (k < 10)
 	    {
 	      if (zab[0][k] == (tab[0][i] + tab[j][0]))
 		zab[1][k] += darrondi(tab[j][i]);
@@ -123,6 +123,12 @@ void	proba_z(double **tab, double **zab)
 	  i++;
 	}
       j++;
+    }
+  k = 1;
+  while (k < 10)
+    {
+      zab[1][10] += zab[1][k];
+      k++;
     }
 }
 

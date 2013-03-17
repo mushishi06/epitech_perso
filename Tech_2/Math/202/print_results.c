@@ -5,7 +5,7 @@
 ** Login   <belia-_r@epitech.net>
 **
 ** Started on  Sun Mar 10 15:47:35 2013 romain belia-bourgeois
-** Last update Wed Mar 13 19:15:08 2013 romain belia-bourgeois
+** Last update Sun Mar 17 14:12:49 2013 romain belia-bourgeois
 */
 
 #include	<stdio.h>
@@ -31,10 +31,10 @@ void	print_results(double **tab, double **zab)
   printf ("p(Z=z)\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\t%.3g\n",
 	  zab[1][1], zab[1][2], zab[1][3], zab[1][4], zab[1][5],zab[1][6],
 	  zab[1][7], zab[1][8], zab[1][9], zab[1][10]);
-  printf ("esperance de X:\t%.03f\n", esp_x(tab));
-  printf ("variance de X:\t%.03f\n", var_x(tab));
-  printf ("esperance de Y:\t%g\n", esp_y(tab));
-  printf ("variance de Y:\t%g\n", var_y(tab));
-  printf ("esperance de Z:\t%g\n", esp_z(zab));
-  printf ("variance de Z:\t%g\n", var_z(zab));
+  printf ("esperance de X:\t%.03f\n", darrondi(esp_x(tab)));
+  printf ("variance de X:\t%.03f\n", darrondi(var_x(tab)));
+  printf ("esperance de Y:\t%g\n", darrondi(esp_y(tab)));
+  printf ("variance de Y:\t%g\n", darrondi(var_y(tab)));
+  printf ("esperance de Z:\t%g\n", darrondi(esp_z(zab)));
+  printf ("variance de Z:\t%g\n", darrondi(var_z(zab)));
 }
