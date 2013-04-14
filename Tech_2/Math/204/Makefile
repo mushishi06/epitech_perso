@@ -5,25 +5,30 @@
 ## Login   <belia-_r@epitech.net>
 ## 
 ## Started on  Sun Apr 22 20:46:27 2012 belia-_r
-## Last update Sun Apr 22 20:47:02 2012 belia-_r
+## Last update Fri Apr 12 21:39:01 2013 romain belia-bourgeois
 ##
 
-NAME 	= 204param
-SRCS	= main.c \
-	others.c
+NAME 	= 204canard
+
+SRCS	= xmalloc.c	\
+	main.c		\
+	sdl/fleche.c	\
+	sdl/axes.c	\
+	sdl/fonctions.c	\
+#	test.c		\
 
 OPTI	= -O2
 
-IPATH   = -I./includes -I./src/proc
-OBJOPT  = $(OPTI) -W -Wall
+IPATH   = -I./include -I./src/proc
+OBJOPT  = $(OPTI) #-W -Wall
 CFLAGS  = $(OBJOPT) $(IPATH)
 CXXFLAGS= $(CFLAGS)
 
-LPATH   = -L. -lm
+LPATH   = -L. -lm `sdl-config --cflags --libs` -lSDL_gfx
 
 RM 	= /bin/rm -f
 
-CC 	= gcc
+CC 	= g++
 
 OBJS 	= $(SRCS:.c=.o)
 

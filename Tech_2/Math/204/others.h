@@ -5,7 +5,7 @@
 ** Login   <belia-_r@epitech.net>
 **
 ** Started on  Sun Apr 22 20:46:03 2012 belia-_r
-** Last update Sun Apr 22 20:46:05 2012 belia-_r
+** Last update Tue Apr  9 03:10:07 2013 romain belia-bourgeois
 */
 
 #ifndef __OTHERS_H_
