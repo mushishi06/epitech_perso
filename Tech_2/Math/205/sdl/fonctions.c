@@ -5,7 +5,7 @@
 ** Login   <belia-_r@epitech.net>
 **
 ** Started on  Sun May  5 12:51:16 2013 romain belia-bourgeois
-** Last update Sun May  5 13:47:14 2013 romain belia-bourgeois
+** Last update Sun May  5 14:05:19 2013 romain belia-bourgeois
 */
 
 #include	<SDL/SDL_gfxPrimitives.h>
@@ -46,7 +46,7 @@ void	draw_func_rep(SDL_Surface *ecran, SDL_Surface *rectangle, double ect, doubl
 }
 
 void	draw_legend(SDL_Surface *ecran)
-{x
+{
   rectangleColor(ecran, 1000, 400, 850, 450, 0xffffffff);
   lineColor(ecran, 857, 425, 893, 425, 0x3a3affff);
   stringColor(ecran, 900, 422, "Repartition", 0xffffffff);
