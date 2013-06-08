@@ -5,7 +5,7 @@
 ** Login   <belia-_r@epitech.net>
 **
 ** Started on  Wed Mar 20 21:48:20 2013 romain belia-bourgeois
-** Last update Thu Mar 28 11:15:25 2013 romain belia-bourgeois
+** Last update Sat Jun  8 19:55:23 2013 romain belia-bourgeois
 */
 
 #include	<string.h>
@@ -25,7 +25,7 @@ void	init_var(double **tab, double **print, double **zab)
     }
   i = 0;
   while (i < 2)
-x    {
+    {
       zab[i] = xmalloc(11 * sizeof(**tab));
       i++;
     }

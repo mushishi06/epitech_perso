@@ -5,7 +5,7 @@
 // Login   <belia-_r@epitech.net>
 //
 // Started on  Sat Mar 23 20:53:43 2013 romain belia-bourgeois
-// Last update Mon Apr  1 02:44:56 2013 romain belia-bourgeois
+// Last update Sat Jun  8 19:51:58 2013 romain belia-bourgeois
 //
 
 #include	<iostream>
@@ -70,14 +70,14 @@ mpz_class	 coeff_binomial(double n, double k)
 	i2++;
       }}
   mpz_class res(b);
-  mpz_clear(tmp);
+  /*  mpz_clear(tmp);
   mpz_clear(tmp2);
   mpz_clear(tmp3);
   mpz_clear(k_);
   mpz_clear(n_);
   mpz_clear(b);
   mpz_clear(i);
-  return (res);
+  */  return (res);
 }
 //    b = ((b * (n - i + 1.0)) / i);
 
@@ -88,14 +88,14 @@ double	proba(double tma)
 
 void	loi_binomial(double tma)
 {
-  double	n = 3500;
-  double	k = 1;
+  double	n = 100;
+  double	k = 0;
   double	p;
   double	res = 0;
   double	tmp;
 
   //  p = proba(tma);
-  p = 0.004;
+  p = 0.0412;
   std::cout << "proba : " << p << std::endl;
   while (k <= 50)
     {
